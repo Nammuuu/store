@@ -24,7 +24,10 @@ export const GET = async (req: NextRequest) => {
 
     return NextResponse.json(user, { status: 200 })
   } catch (err) {
-    console.log("[users_GET]", err)
+    console.log("[users_GET erro this ]", err)
     return new NextResponse("Internal Server Error", { status: 500 })
   }
 }
+
+
+export const dynamic = "force-dynamic";
